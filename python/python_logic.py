@@ -36,3 +36,32 @@ for i in demo_list:
     
 else:
     print('else')
+
+
+
+print('***************')
+print('測試 break')
+
+for i in range(1, 10):
+    print(i)
+    if i==9:
+        break
+else:
+    print('完整執行完回圈才會進 else 如果有 break 就不會看到這行')
+
+
+# zip 用法   多值回圈  執行次數為最短的迴圈
+
+a_array = ['a', 'aa', 'aaa']
+b_array = ['b', 'bb', 'bbb']
+c_array = ['c', 'cc', 'ccc', 'cccc']
+
+for a, b, c in zip(a_array, b_array, c_array):
+    print(a + b + c)
+
+for i in range(1,30,7):
+    print(i)
+
+# 生成式   變數 for i in 迭代像目 if 條件
+temp_list = list(i for i in range(1, 11 , 3) if i != 4)
+print(temp_list)
