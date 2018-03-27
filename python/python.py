@@ -101,8 +101,8 @@ demo_dict = dict()
 print(demo_dict)
 
 #放值
-demo_dict = {"a":"aa"}
-print(demo_dict)                #{'a': 'aa'}
+demo_dict = {"a": "aa"}
+print(demo_dict)                # {'a': 'aa'}
 
 #dict 各種轉換
 demo_dict = dict([['a', 'b'], ['c', 'd']])
